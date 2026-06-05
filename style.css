@@ -1,3 +1,121 @@
-body{
-font-family: Arial;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  min-height: 100vh;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.contenedor {
+  display: flex;
+  width: 90%;
+  max-width: 1400px;
+  min-height: 90vh;
+  margin: 20px auto;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* BARRA LATERAL */
+.lateral {
+  width: 30%;
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px;
+}
+
+.lateral img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+}
+
+.lateral h2 {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.lateral p {
+  margin-top: 10px;
+}
+
+.lateral ul {
+  margin-top: 10px;
+}
+
+/* CONTENIDO PRINCIPAL */
+.principal {
+  width: 70%;
+  padding: 30px;
+}
+
+.seccion {
+  margin-bottom: 25px;
+}
+
+.seccion h2 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #2c3e50;
+}
+
+ul {
+  margin-left: 20px;
+}
+
+/* BOTÓN DE TEMA */
+#btnTema {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+
+  width: 50px;
+  height: 50px;
+
+  border: none;
+  border-radius: 50%;
+
+  background-color: #2c3e50;
+  color: white;
+
+  font-size: 20px;
+  cursor: pointer;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+#btnTema:hover {
+  transform: scale(1.1);
+}
+
+/* MODO OSCURO */
+body.dark-mode {
+  background-color: #121212;
+}
+
+body.dark-mode .contenedor {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+body.dark-mode .principal {
+  color: white;
+}
+
+body.dark-mode .seccion h2 {
+  color: #4da6ff;
+  border-bottom-color: #4da6ff;
+}
+
+body.dark-mode #btnTema {
+  background-color: white;
+  color: #121212;
 }
